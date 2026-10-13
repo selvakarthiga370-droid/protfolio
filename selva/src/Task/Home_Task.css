@@ -1,0 +1,164 @@
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+  color: #1e293b;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.portfolio {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  border: 100px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 6%;
+  background: white;
+  border: 10px;
+}
+
+.logo {
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: #334155;
+}
+
+.nav-links a:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Home page */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 6%;
+  gap: 30px;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero h1 span {
+  color: rgb(1, 1, 1);
+}
+
+.intro {
+  line-height: 1.8;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.primary-btn {
+  background: rgb(98, 98, 118);
+  color: white;
+  padding: 12px 18px;
+  border-radius: 5px;
+}
+
+.secondary-btn {
+  border: 1px solid blue;
+  color: blue;
+  padding: 12px 18px;
+  border-radius: 5px;
+}
+
+
+/* Dashboard box */
+.dashboard {
+  width: 90%;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Login box */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 25px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-card input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer {
+  margin-top: auto;
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .navbar,
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

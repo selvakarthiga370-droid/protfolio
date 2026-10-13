@@ -1,0 +1,161 @@
+
+.mec-hero-page {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(rgba(4, 21, 53, 0.75), rgba(4, 21, 53, 0.75)), 
+              url('https://mec.edu.in') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.mec-navbar-top {
+  background-color: #ffffff;
+  padding: 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.mec-logo-area img {
+  height: 55px;
+}
+
+.mec-contact-badges {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.admission-hotline {
+  color: #d9534f;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.tnea-badge-box {
+  background-color: #f0ad4e;
+  color: #000;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.mec-content-body {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 40px 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.mec-slogan-panel {
+  color: #ffffff;
+  padding-right: 40px;
+}
+
+.mec-slogan-panel h2 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+.mec-floating-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 25px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-height: 85vh;
+  overflow-y: auto; 
+  width: 100%;
+  max-width: 520px;
+  justify-self: center;
+}
+
+.mec-floating-card h4 {
+  margin: 0 0 20px 0;
+  color: #003366;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 2px solid #f0ad4e;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+.form-responsive-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.span-full-row {
+  grid-column: span 2;
+}
+
+.input-block-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-block-element label {
+  font-size: 11px;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.input-block-element input,
+.input-block-element select,
+.input-block-element textarea {
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: none;
+}
+
+.input-block-element input:focus,
+.input-block-element select:focus {
+  border-color: #003366;
+}
+.mec-green-btn {
+  grid-column: span 2;
+  background-color: #7cb342; 
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+  text-transform: uppercase;
+  transition: background 0.2s;
+}
+
+.mec-green-btn:hover {
+  background-color: #689f38;
+}
+@media (max-width: 992px) {
+  .mec-content-body {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+  .mec-slogan-panel {
+    text-align: center;
+    padding-right: 0;
+  }
+  .mec-slogan-panel h2 {
+    font-size: 32px;
+  }
+}
